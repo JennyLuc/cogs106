@@ -1,0 +1,9 @@
+    body{
+        background-color: lightgray;
+    }
+    div.bar{
+        display: inline-inline-block;
+        width: 20px;
+        background-color: darkblue;
+        margin-right: 5px;
+    }
