@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+ <head>
+    <meta charset="utf-8"/>
+    <!-- Internal stylesheet import -->
+    <link rel="stylesheet" href="main.css">
+    <!-- External Script -->
+    <!-- <script src="hw3js.js"></script> -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+  
+  </head>
+  <body>
+    <!-- Page Header Table -->
+    <table class="simpleTable" border="2">
+      <tr>
+        <td width="5%"><img src="homer-yelling.jpg" alt="homer yelling" class="pageLogo"/></td>
+        <td width="15%"><h1>Energy</h1></td>
+        <td><h2>Springfield</h2></td>
+      </tr>
+    </table>
+
+    <!-- Chart Placement Table -->
+    <table class="simpleTable greaterArea">
+      <tr>
+        <td rowspan="2" id="sharedtable">
+
+            <table id = "triotables">
+                <!-- <tr>
+                    <td id="generation">bye</td>
+                </tr>
+                <tr>
+                    <td id = "price">bye</td>
+                </tr>
+                <tr>
+                    <td id = "temperature">bye</td>
+                </tr> -->
+
+                <div id="generation"></div>
+                <div id="price"></div>
+                <div id="temperature"></div>
+
+
+            </table>
+
+
+        </td>
+
+        <td id="legendGrid">Legend Here!</td>
+
+
+      </tr>
+
+      <tr>
+    
+        <td id="pieGrid">
+          <div id = "piecharthere">Pie Chart Here!</div>
+        </td>
+      </tr>
+
+
+    </table>
+
+    <!-- Internal JS Import -->
+    <script src="hw3js.js"></script>
+  </body>
+</html>

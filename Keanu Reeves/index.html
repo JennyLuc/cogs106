@@ -1,0 +1,89 @@
+﻿<html>
+  <head>
+	<title> Keanu Reeves Stats> </title>
+	<style> 
+		#chart{
+			background-color: white;
+			max-width: 800px;
+		}
+
+		body{
+			background: #eaeaea;
+		}
+
+	</style>
+  </head>
+  <body>
+	
+	<div id = "imghorizontal" class="horiz clearfix" style="text-align: center;">
+		<img src="keanu7.jpg" style="height:150px;">
+		<img src="keanu1.jpg" style="height:150px;">
+		<img src="keanu2.jpg" style="height:150px;">
+		<img src="keanu3.jpg" style="height:150px;">
+		<img src="keanu4.jpg" style="height:150px;">
+		<img src="keanu5.jpg" style="height:150px;">
+		<img src="keanu6.jpg" style="height:150px;">
+		
+	</div>
+    <h1>
+		Keanu Reeves Random Movie Facts
+	</h1>
+
+	<div id = "chart">
+		<h2>
+		Word Cloud Map
+		</h2>
+		<p>
+		Below is the wordcloud map of the genres of the 150 movies that Keanu Reeves has starred in.<br> 
+		The wordcloud helps gives a representatin of genres of movies that he participates most in. <br>
+		We can see that Keanu Reeves participates most in movies that have the genres drama, comedy, and <br>
+		romance.
+
+		</p>
+
+		<img src="first_wordcloud.png" alt="wordcloud" style="width:500px;height:250px;">
+
+	</div>
+
+	<div id = "chart">
+
+		<h2> Tree Map Genre vs. Revenue </h2>
+	
+		<p>
+		In the Tree map, each section represents a genre of the 150 movies that Keanu Reeves has participated <br>
+		in. Each sections' size is based on the revenue that the movie brings in. If a movie has multiple genres, <br>
+		then the revenue is divided evenly among the genres. It would have been better if rather than a list of <br>
+		genres that a movie represents, that there is a single genre that the movie best represents as, since <br>
+		not all genres listed are weighted equally in the movie. 
+
+		</p>
+
+		<img src="treemap2.png" alt="wordcloud" style="width:500px;height:400px;">
+
+	</div >
+
+	<div id = "chart">
+		<h2>Radar Chart</h2>
+
+		<p>
+		Keanu Reeves has starred in many movies, but four of his top known films include The Matrix, The Speed, <br>
+		Point Break, and The Matrix Reloaded. Although all these movies are great on their own, I decided to <br>
+		create a radar chart for each of these movies judging on the factors of ratings, ratings count, box office <br>
+		revenue, release year, and runtime. In a radar chart, if all edges are able to hit the end of the circle/graph <br>
+		it would represent how well movie/subject/object is. Unfortunately matplotlib would change the axis of the <br>
+		radar chart where if the movie had its highest rating of a 3, the maximum of the circle would be 3 even though <br>
+		the max scaling is 5. This would skew 
+
+		</p>
+
+		<h3>The Matrix </h3>
+		<img src="theMatrix.png" alt="theMatrix" style="width:250px;">
+		<h3>The Speed </h3>
+		<img src="theSpeed.png" alt="theSpeed" style="width:250px;">
+		<h3>Point Break </h3>
+		<img src="pointBreak.png" alt="pointBreak" style="width:250px;">
+		<h3>The Matrix Reloaded </h3>
+		<img src="matrixReload.png" alt="matrixReload" style="width:250px;">
+	</div>
+  </body>
+</html>

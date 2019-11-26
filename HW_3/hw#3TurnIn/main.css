@@ -1,0 +1,64 @@
+body{
+    background-color:  #ece9e6 ;
+}
+
+.simpleTable {
+    width: 90%;
+    margin-left: 5%;
+    border: transparent;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.greaterArea{
+    border: transparent;
+}
+
+.greaterArea tr td {
+    width:70%;
+    height:200px;
+
+
+}
+
+#pieGrid {
+    width:100%;
+    height:100%;
+    min-height:250px;
+}
+.zc-ref {
+    display: none;
+}
+
+#legendGrid {
+    border-top: 1px black;
+    border-bottom: 1px black;
+    border-left: transparent;
+    border-right: transparent;
+}
+
+
+#generation{
+    height:50%;
+    background-color:  #ece9e6 ;
+
+}
+
+#price{
+    height:25%;
+    background-color:  #ece9e6 ;
+
+}
+
+#temperature{
+    height:25%;
+    background-color:  #ece9e6 ;
+}
+
+.pageLogo {
+    height: 75px;
+}
+
+.table{
+    width: 70%;
+}
