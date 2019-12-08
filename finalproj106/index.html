@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Women in the Olympics</title>
+    <meta name="description" content="Simplified Bootstrap template with sticky menu">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-menu.css" rel="stylesheet">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">DSC 106 Final</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Athlete Stats by Sport</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#whatwedo">Gender in the Olympics</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Olympian Age by Country</a>
+                    </li>
+                </ul>
+            </div>	<!-- .navbar-collapse -->
+        </div>		<!-- .container -->
+    </nav>
+    <!-- Welcome   -->
+    <section id="welcome" class="welcome-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Women in the Olympics</h1>
+                    <img src="images/bkg_women.png" alt="Olympic Logo" width="360" height="210">
+                    <img src="images/women_oly.gif" alt="Olympic Logo" width="360" height="210">
+
+                    <img src="images/women_tennis.png" alt="Olympic Logo" width="360" height="210">
+
+                    <p></p>
+                <div id="summary">
+                    <p style = "padding-right: 90px; padding-left: 50px; font-size: 15px;">We looked at how athletes split by gender changed over time in the Olympics.
+                   	We found that
+                    women entered the Olympics later than men, which had some effect on the early body-type data
+                	of some sports, such as higher median ages when female categories for sports were introduced. </p> 
+                    <p style = "padding-right: 90px; padding-left: 50px;  font-size: 15px;">
+                    We also
+                	looked at how long it took for more women to enter the Olympics once the sport was made available to
+                	women to compete in, as well as how quickly some countries introduced female competitors to the Olympics.
+                    </p>
+                    Our Olympic data was obtained from <a href="https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results#noc_regions.csv" 
+                    target="_blank" rel="nofollow">Kaggle</a>. <br>It contains data for athlete statistics, as well as year, season, and events. 
+					The HTML template came from <a href="https://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a>.</p>
+				</div>
+					
+                    
+                    <a id = "begin-button" class="btn btn-primary page-scroll" href="#about">Begin!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section">
+                <div class="col-lg-12">
+                    
+                    <h1>Athlete Trends by Sport</h1>
+<!--                     <img id="headerimg1" src="images/ath_over_time.png" style="max-width:300px; max-height:300px"/>
+ -->
+                    
+                    <hr>
+                    <br>
+
+                    <div class="idk2" id="SECTION1_GRAPHS">
+                        Select Sport: 
+                        <select id="dlist" onChange="swapImage()">
+
+                        <option value="images/swimming_h" id="swimming">Swimming</option>
+
+                        <option value="images/gym">Gymnastics</option>
+                        <option value="images/ath">Athletics/Track</option>
+                        <option value="images/ten">Tennis</option>
+                        <option value="images/socc">Soccer</option>
+
+                        <option value="images/fs">Figure Skating</option>
+                        <option value="images/sb">Snowboarding</option>
+                        <option value="images/ss">Speed Skating</option>
+
+                        </select>
+                        <br>
+                        <br>
+                        <br>
+                    <center>
+                    
+                    <div class="row">
+                        <div class="column">
+                            <img id="imageToSwap3" src="images/swimming_h3.png" class="responsive"
+                            style="width:360px;height:270px;"/>
+                        </div>
+                        <div class="column">
+                        <img id="imageToSwap" src="images/swimming_h1.png" class="responsive"
+                        style="width:360px;height:270px;"/>
+                        </div>
+                        <div class="column">
+                            <img id="imageToSwap2" src="images/swimming_h2.png" class="responsive"
+                            style="width:360px;height:270px;"/>
+                        </div>
+
+                    </div>
+                    </center>
+
+                        <script type="text/javascript">
+                        function swapImage(){
+                            var image2 = document.getElementById("imageToSwap2");
+                            var image = document.getElementById("imageToSwap");
+                            var image3 = document.getElementById("imageToSwap3");
+
+                            var dropd = document.getElementById("dlist");
+                            // if dropd.id == 
+                            image.src = dropd.value + "1.png";  
+                            image2.src = dropd.value + "2.png";  
+                            image3.src = dropd.value + "3.png";  
+                                };
+                        </script>
+                    </div>
+
+                    
+                </div>
+
+    </section>
+
+    <!-- What we do Section -->
+    <section id="whatwedo" class="whatwedo-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Gender in the Olympics by Country</h1>
+                    <hr>
+                    
+
+                    <div class="idk2" id="SECTION1_GRAPHS">
+                        Select Country: 
+                        <select id="country_list" onChange="genderSwapImage()">
+
+                        <option value="images/gender_line/USA" id="usa">USA</option>
+                        <option value="images/gender_line/Great Britain">Great Britain</option>
+                        <option value="images/gender_line/Italy">Italy</option>
+                        <option value="images/gender_line/Germany">Germany</option>
+                        <option value="images/gender_line/Sweden">Sweden</option>
+
+                        <option value="images/gender_line/Canada">Canada</option>
+                        <option value="images/gender_line/Japan">Japan</option>
+                        <option value="images/gender_line/Russia">Russia</option>
+                        <option value="images/gender_line/France">France</option>
+                        <option value="images/gender_line/China">China</option>
+
+                        </select>
+                        <br>
+                        <br>
+                        <center>
+                    
+                            <div class="row">
+                                <div class="column">
+                                    <img id="imageToSwap_summer" src="images/gender_line/USA_summer.png" class="responsive"
+                                    style="width:500px;height:400px;"/>                                
+                                </div>
+                                <div class="column">
+                                    <img id="imageToSwap_winter" src="images/gender_line/USA_winter.png" class="responsive"
+                                    style="width:500px;height:400px;"/>
+                                </div>
+        
+                            </div>
+                        </center>
+                        <script type="text/javascript">
+                            function genderSwapImage(){
+                                var summer_img = document.getElementById("imageToSwap_summer");
+                                var winter_img = document.getElementById("imageToSwap_winter");
+
+                                var dropd = document.getElementById("country_list"); 
+                                summer_img.src = dropd.value + "_summer.png"; 
+                                winter_img.src = dropd.value + "_winter.png"  
+                            };
+                        </script>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+        	<h1>Proportion of Female Competitors by Sport</h1>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+
+                    </div>
+                </div>
+                <img id="heatmap" src="images/heatmap.png" class="responsive" style="width: 500px" /> 
+                <br>
+                <br>
+                <center>
+                        <font size="4">
+                        The sports listed in the heat diagram are sports that have existed from 1900 until
+                        present day. However despite women being able to participate in the Olympics starting 
+                        in 1900, some sports did not have events for women until much later in time. An example
+                        that can be seen is boxing which has been available through the past century however female
+                        boxers did not start participating in it until 2012.
+                        </font>
+                </center>
+            </div>  
+        </section>
+	
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+	
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/sticky-menu.js"></script>
+
+</body>
+
+</html>
